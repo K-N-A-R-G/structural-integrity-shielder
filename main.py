@@ -14,3 +14,13 @@
         'od.copy() -> a shallow copy of od'
 
 # --- END OF NODE UPDATE ---
+
+
+# --- SYNC DATA BLOCK: CONCURRENT.FUTURES ---
+
+def __getattr__(name):
+    global ProcessPoolExecutor, ThreadPoolExecutor
+
+    if name == 'ProcessPoolExecutor':
+
+# --- END OF NODE UPDATE ---
